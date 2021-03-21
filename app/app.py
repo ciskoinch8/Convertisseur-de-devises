@@ -32,7 +32,10 @@ class App(QtWidgets.QWidget):
         color: rgb(240, 240, 240);
         border: none;
         """)
-
+        self.btn_inverver.setStyleSheet("""
+        background-color: #DCDDDE;
+        color: black;
+        """)
     def set_default_values(self):
         self.cbb_devisesFrom.addItems(sorted(list(self.c.currencies)))
         self.cbb_devisesTo.addItems(sorted(list(self.c.currencies)))
